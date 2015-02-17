@@ -15,7 +15,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 DEFAULT_USER=max
 JIRA_URL=
 REPORTTIME=5
-LESS="FRS"
+LESS="FRSX"
 
 zstyle ':completion:*' special-dirs true
 unsetopt inc_append_history
