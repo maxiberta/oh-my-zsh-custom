@@ -17,6 +17,8 @@ JIRA_URL=
 REPORTTIME=5
 LESS="FRSX"
 
+export EDITOR="vim"
+
 zstyle ':completion:*' special-dirs true
 unsetopt inc_append_history
 setopt append_history
