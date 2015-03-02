@@ -17,6 +17,11 @@ JIRA_URL=
 REPORTTIME=5
 LESS="FRSX"
 
+export STANDARD_CACHE_DIR="${XDG_CACHE_HOME:-${HOME}/.cache}/pip"
+export WHEELHOUSE="${STANDARD_CACHE_DIR}/wheelhouse"
+export PIP_FIND_LINKS="file://${WHEELHOUSE}"
+export PIP_WHEEL_DIR="${WHEELHOUSE}"
+
 export EDITOR="vim"
 
 zstyle ':completion:*' special-dirs true
