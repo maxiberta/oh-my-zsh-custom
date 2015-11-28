@@ -1,10 +1,12 @@
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(common-aliases jira nyan virtualenv virtualenvwrapper python zsh_reload)
+plugins=(common-aliases jira nyan virtualenv virtualenvwrapper python zsh_reload zsh-syntax-highlighting history-substring-search)
 ## FIXME Manually load all of the plugins that were defined above
 for plugin ($plugins); do
-  if [ -f $ZSH/plugins/$plugin/$plugin.plugin.zsh ]; then
+  if [ -f $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh ]; then
+    source $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh
+  elif [ -f $ZSH/plugins/$plugin/$plugin.plugin.zsh ]; then
     source $ZSH/plugins/$plugin/$plugin.plugin.zsh
-  fi  
+  fi
 done
 
 ZSH_THEME="agnoster"
@@ -14,6 +16,9 @@ DEFAULT_USER=max
 JIRA_URL=
 REPORTTIME=5
 LESS="FRSX"
+
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root line)
 
 export STANDARD_CACHE_DIR="${XDG_CACHE_HOME:-${HOME}/.cache}/pip"
 export WHEELHOUSE="${STANDARD_CACHE_DIR}/wheelhouse"
