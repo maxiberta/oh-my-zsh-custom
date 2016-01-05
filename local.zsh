@@ -18,7 +18,7 @@ REPORTTIME=5
 LESS="FRSX"
 
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root line)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
 
 export STANDARD_CACHE_DIR="${XDG_CACHE_HOME:-${HOME}/.cache}/pip"
 export WHEELHOUSE="${STANDARD_CACHE_DIR}/wheelhouse"
