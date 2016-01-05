@@ -1,5 +1,5 @@
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(common-aliases jira nyan virtualenv virtualenvwrapper python zsh_reload zsh-syntax-highlighting history-substring-search)
+plugins=(common-aliases jira nyan virtualenv virtualenvwrapper python zsh_reload history-substring-search        zsh-syntax-highlighting)
 ## FIXME Manually load all of the plugins that were defined above
 for plugin ($plugins); do
   if [ -f $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh ]; then
